@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+//import "./BuyActionWindow.css"
 import { Link } from "react-router-dom";
 
 import axios from "axios";
-import { BASE_URL } from "./src/config";
+import { BASE_URL } from "../../config";
 import GeneralContext from "./GeneralContext";
 
 import "./BuyActionWindow.css";

@@ -1,7 +1,7 @@
 import React , {useState , useEffect} from "react";
 import axios from "axios";
-import { BASE_URL } from "./src/config";
-import { positions } from "./src/data/data";
+import { BASE_URL } from "../../config";
+//import { positions } from "./data/data";
 
 const Positions = () => {
   const [allPosition , setAllPosition] = useState([]);

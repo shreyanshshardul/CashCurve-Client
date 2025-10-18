@@ -8,7 +8,7 @@ import Holdings from "./Holdings";
 import Orders from "./Orders";
 import Positions from "./Positions";
 import Summary from "./Summary";
-import { BASE_URL } from "./src/config";
+import { BASE_URL } from "../../config";
 import WatchList from "./WatchList";
 import { GeneralContextProvider } from "./GeneralContext";
 
