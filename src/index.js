@@ -14,7 +14,7 @@ import ProductPage from './landing_page/products/ProductPage';
 import PricingPage from './landing_page/pricing/PricingPage';
 import SupportPage from './landing_page/supports/SupportPage';
 import Fail from './landing_page/Fail';
-import Dashboard from './landing_page/dashboard/Holdings';
+import Dashboard from './landing_page/dashboard/components/Holdings';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
