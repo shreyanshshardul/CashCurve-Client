@@ -5,7 +5,7 @@ export default function Footer(){
         <div className="container-fluid p-5 border-top">
         <div className="row">
             <div className="col-3">
-                <img src="/media/logo2.png" style={{width:"40%"}}></img>
+                <img src="/media/Logo2.png" style={{width:"40%"}}></img>
                 <p className="text-muted d-block mb-1 mt-4">© 2010 - 2025, CashCurve Broking Ltd.
                          All rights reserved.</p>
                     <div className="d-flex gap-3 mb-2 mt-2">

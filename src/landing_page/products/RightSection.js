@@ -11,7 +11,7 @@ export default function RightSection({imageURL , productName , productDescriptio
                     </div>
                     <div className="mt-3">
                             <a href={googlePlay} style={{textDecoration:"none"}}><img src="/media/googlePlayBadge.svg"></img></a>
-                    <a href={appStore} style={{textDecoration:"none" , marginLeft:"6%"}}><img src="/media/appStoreBadge.svg"></img></a>
+                    <a href={appStore} style={{textDecoration:"none" , marginLeft:"6%"}}><img src="/media/appstoreBadge.svg"></img></a>
                     </div>
                     
                 </div>

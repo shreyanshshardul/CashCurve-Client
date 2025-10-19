@@ -6,7 +6,7 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg bg-body-tertiary border-bottom">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          <img src="/media/logo2.png" style={{ width: "7%", marginLeft: "5%" }} alt="Logo" />
+          <img src="/media/Logo2.png" style={{ width: "7%", marginLeft: "5%" }} alt="Logo" />
         </Link>
 
         <button
