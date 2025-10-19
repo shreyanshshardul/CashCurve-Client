@@ -1,5 +1,4 @@
 import Hero from './Hero'
-import Brojkreg from './Brojkreg'
 import OpenAccount from '../OpenAccount'
 
 export default function PricingPage(){
@@ -7,7 +6,6 @@ export default function PricingPage(){
         <>
             <Hero/>
                <OpenAccount/>
-            <Brojkreg/>
         </>
     )
 }

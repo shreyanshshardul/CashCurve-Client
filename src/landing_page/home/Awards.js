@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Awards() {
   return (
-    <div className="container mt-5">
-      <div className="row">
+    <div className="container-fluid p-5">
+      <div className="row p-5">
         {/* Left side image */}
         <div className="col-md-6 mb-5">
           <img

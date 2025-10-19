@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './index2.css'
 
 import BuyActionWindow from "./BuyActionWindow";
 

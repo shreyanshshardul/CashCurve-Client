@@ -1,10 +1,10 @@
 export default function CreateTicket(){
     return (
-        <div className="container">
+        <div className="container-fluid p-5">
             <div className="row p-5">
                 <h3>To create a ticket, select a relevant topic</h3>
                 <br></br>
-                    <div className="col-4 p-5">
+                    <div className="col-4 ">
                         <h6 className="mb-3"><i class="fa-solid fa-circle-plus"></i> Account Opening</h6>
                         <a href="/" style={{textDecoration:"none"}} className="d-block">Online Account Opening</a><br></br>
                         <a href="/" style={{textDecoration:"none"}} className="d-block">Offline Account Opening</a><br></br>

@@ -1,11 +1,11 @@
 export default function LeftSection({imageURL , productName , productDescription , tryDemo , learnMore , googlePlay , appStore}){
     return (
-        <div className="container mt-3">
+        <div className="p-5">
             <div className="row">
-                <div className="col p-5 mb-5">
+                <div className="col p-5 ">
                     <img src={imageURL}></img>
                 </div>
-                <div className="col p-5 mt-5">
+                <div className="col p-5 ">
                     <h4>{productName}</h4>
                     <p>{productDescription}</p>
                     <div>

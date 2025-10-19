@@ -1,7 +1,7 @@
 export default function Universe() {
   return (
-    <div className="container">
-      <div className="row text-center">
+    <div className="p-5">
+      <div className="row text-center p-5">
         <h1 className="mt-5 fs-2 mb-3">The CashCurve Universe</h1>
         <p>
           Extend your trading and investment experience even further with our
@@ -52,12 +52,13 @@ export default function Universe() {
             strategies without coding.
           </p>
         </div>
+        <a href="/signup">
         <button
-          className="p-2 btn btn-primary mb-5"
+          className="p-2 btn btn-primary mb-5 mt-4"
           style={{ margin: "0 auto", width: "20%" }}
         >
           Signup Now
-        </button>
+        </button></a>
       </div>
     </div>
   );

@@ -43,7 +43,7 @@ window.location.href = "/dashboard";
   };
 
   return (
-    <div className="container">
+    <div className="p-5 text-center">
       <div className="row justify-content-center">
         <div className="col-md-6 p-5">
           <form onSubmit={handleLogin}>

@@ -48,7 +48,7 @@ export default function Hero() {
   };
 
   return (
-    <div className="container">
+    <div className="container-fluid p-5">
       <div className="row justify-content-center">
         <div className="col-md-6 p-5">
           <form onSubmit={handleSubmit}>

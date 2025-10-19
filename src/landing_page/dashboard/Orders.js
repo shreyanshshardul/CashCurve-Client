@@ -6,12 +6,18 @@ import { BASE_URL } from "../../config";
 const Orders = () => {
   const [item, setItem] = useState([]);
 
-  useEffect(() => {
-    axios
-      .get(`${BASE_URL}/allOrders`) // make sure this route exists in backend
-      .then((res) => setItem(res.data))
-      .catch((err) => console.error("Error fetching orders:", err));
-  },[]);
+ useEffect(() => {
+  console.log("Orders component mounted");
+
+  axios.get(`${BASE_URL}/allOrders`)
+    .then(res => {
+      console.log("Fetched orders:", res.data);
+      setItem(res.data);
+    })
+    .catch(err => console.error("Error fetching orders:", err));
+}, []);
+
+
 
   return (
     <>

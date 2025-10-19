@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Hero() {
   return (
-    <div className="container text-center py-5">
+    <div className="p-5 text-center">
       <div className="row justify-content-center">
         <div className="col-lg-10">
           <img
@@ -15,12 +15,13 @@ export default function Hero() {
           <p className="lead mb-4">
             Online platform to invest in stocks, derivatives, mutual funds and more
           </p>
+         <a href="/signup">
           <button
             className="btn btn-primary px-4 py-2"
             style={{ width: '200px' }}
           >
             Signup Now
-          </button>
+          </button></a>
         </div>
       </div>
     </div>

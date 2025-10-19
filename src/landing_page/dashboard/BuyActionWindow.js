@@ -1,29 +1,37 @@
-import React, { useState } from "react";
-//import "./BuyActionWindow.css"
+import React, { useState, useContext } from "react";
+import "./BuyActionWindow.css";
 import { Link } from "react-router-dom";
-
 import axios from "axios";
 import { BASE_URL } from "../../config";
 import GeneralContext from "./GeneralContext";
-
-import "./BuyActionWindow.css";
 
 const BuyActionWindow = ({ uid }) => {
   const [stockQuantity, setStockQuantity] = useState(1);
   const [stockPrice, setStockPrice] = useState(0.0);
 
-  const handleBuyClick = () => { 
-     axios.post(`${BASE_URL}/newOrder`, {
-  name: uid,
-  qty: Number(stockQuantity),      // convert string to number
-  price: Number(stockPrice),       // convert string to number
-  mode: "BUY",
-});
-    GeneralContext.closeBuyWindow();
+  // ✅ access context values using useContext
+  const { closeBuyWindow } = useContext(GeneralContext);
+
+  const handleBuyClick = async () => {
+    try {
+      const res = await axios.post(`${BASE_URL}/newOrder`, {
+        name: uid,
+        qty: Number(stockQuantity),
+        price: Number(stockPrice),
+        mode: "BUY",
+      });
+
+      console.log("✅ Order saved:", res.data);
+      alert("✅ Order placed successfully!");
+      closeBuyWindow(); // ✅ context se function call karo
+    } catch (err) {
+      console.error("❌ Error saving order:", err);
+      alert("❌ Failed to place order. Check console.");
+    }
   };
 
   const handleCancelClick = () => {
-    GeneralContext.closeBuyWindow();
+    closeBuyWindow(); // ✅ same here
   };
 
   return (

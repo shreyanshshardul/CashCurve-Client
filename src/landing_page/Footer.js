@@ -2,9 +2,9 @@ import React from 'react'
  
 export default function Footer(){
     return (
-        <div className="container mt-5 border-top">
-        <div className="row mt-5">
-            <div className="col">
+        <div className="container-fluid p-5 border-top">
+        <div className="row">
+            <div className="col-3">
                 <img src="/media/logo2.png" style={{width:"40%"}}></img>
                 <p className="text-muted d-block mb-1 mt-4">© 2010 - 2025, CashCurve Broking Ltd.
                          All rights reserved.</p>
@@ -20,9 +20,9 @@ export default function Footer(){
                     <a href="/" className="text-muted"><i class="fa-brands fa-telegram"></i></a>
                  </div>
             </div>
-            <div className="col">
+            <div className="col-3">
             <h6>Company</h6>
-            <a href="/" style={{textDecoration:"none"}} className="text-muted d-block mb-1">About</a>
+            <a href="/about" style={{textDecoration:"none"}} className="text-muted d-block mb-1">About</a>
             <br></br>
             <a href="/" style={{textDecoration:"none"}} className="text-muted d-block mb-1 "> Philosophy</a><br></br>
            <a href="/" style={{textDecoration:"none"}} className="text-muted d-block mb-1"> Press & media</a><br></br>
@@ -30,7 +30,7 @@ export default function Footer(){
             <a href="/" style={{textDecoration:"none"}} className="text-muted d-block mb-1">CashCurve.tech </a><br></br>
             <a href="/" style={{textDecoration:"none"}} className="text-muted d-block mb-1"> Open source</a><br></br>
             </div>
-            <div className="col">
+            <div className="col-3">
             <h6>Support</h6>
             <a href="/" style={{textDecoration:"none"}} className="text-muted d-block mb-1">Contact us</a>
             <br></br>
@@ -43,7 +43,7 @@ export default function Footer(){
               <a href="/" style={{textDecoration:"none"}} className="text-muted d-block mb-1">Downloads </a><br></br>
 
             </div>
-            <div className="col">
+            <div className="col-3">
             <h6>Account</h6>
             
             <a href="/" style={{textDecoration:"none"}} className="text-muted d-block mb-1">Open demat account </a><br></br>

@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "bootstrap/dist/css/bootstrap.min.css";
-//import "./index.css";
+import "./index.css";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
 import Navbar from "./landing_page/Navbar";
 import Footer from "./landing_page/Footer";
@@ -18,21 +18,35 @@ import SupportPage from "./landing_page/supports/SupportPage";
 import Fail from "./landing_page/Fail";
 import Dashboard from "./landing_page/dashboard/Home";
 
+// Ek wrapper component bana dete hain
+function App() {
+  const location = useLocation();
+
+  // Agar path /dashboard se start hota hai, navbar/footer hide karo
+  const hideNavbarFooter = location.pathname.startsWith("/dashboard");
+
+  return (
+    <>
+      {!hideNavbarFooter && <Navbar />}
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/product" element={<ProductPage />} />
+        <Route path="/pricing" element={<PricingPage />} />
+        <Route path="/support" element={<SupportPage />} />
+        <Route path="/dashboard/*" element={<Dashboard />} />
+        <Route path="*" element={<Fail />} />
+      </Routes>
+      {!hideNavbarFooter && <Footer />}
+    </>
+  );
+}
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
-    <Navbar />
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/signup" element={<Signup />} />
-      <Route path="/about" element={<AboutPage />} />
-      <Route path="/product" element={<ProductPage />} />
-      <Route path="/pricing" element={<PricingPage />} />
-      <Route path="/support" element={<SupportPage />} />
-      <Route path="/dashboard" element={<Dashboard />} />
-      <Route path="*" element={<Fail />} />
-    </Routes>
-    <Footer />
+    <App />
   </BrowserRouter>
 );

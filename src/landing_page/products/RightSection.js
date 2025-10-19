@@ -1,8 +1,8 @@
 export default function RightSection({imageURL , productName , productDescription , tryDemo , learnMore , googlePlay , appStore}){
     return (
-        <div className="container">
+        <div className="p-5">
             <div className="row">
-               <div className="col p-5 mt-5">
+               <div className="col p-5">
                     <h4>{productName}</h4>
                     <p>{productDescription}</p>
                     <div>

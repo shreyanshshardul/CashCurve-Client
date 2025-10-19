@@ -1,12 +1,12 @@
-import React from 'react'
-import { Link } from "react-router-dom"
+import React from 'react';
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary border-bottom">
-      <div className="container">
+      <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          <img src="/media/logo2.png" style={{ width: "9%" }} alt="Logo" />
+          <img src="/media/logo2.png" style={{ width: "7%", marginLeft: "5%" }} alt="Logo" />
         </Link>
 
         <button
@@ -22,32 +22,30 @@ export default function Navbar() {
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <form className="d-flex" role="search">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <Link className="nav-link active" to="/signup">Signup</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link active" to="/about">About</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link active" to="/product">Product</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link active" to="/pricing">Pricing</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link active" to="/support">Support</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link active" to="/">
-                  <i className="fa-solid fa-bars"></i>
-                </Link>
-              </li>
-            </ul>
-          </form>
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0 d-flex gap-4">
+            <li className="nav-item">
+              <Link className="nav-link active" to="/signup">Signup</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link active" to="/about">About</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link active" to="/product">Product</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link active" to="/pricing">Pricing</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link active" to="/support">Support</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link active" to="/">
+                <i className="fa-solid fa-bars"></i>
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
-  )
+  );
 }

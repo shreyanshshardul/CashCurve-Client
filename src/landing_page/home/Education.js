@@ -2,8 +2,8 @@ import React from 'react'
  
 export default function Education(){
     return (
-        <div className="container">
-           <div className="row">
+        <div className="container-fluid p-5">
+           <div className="row p-5">
             <div className="col">
                 <img src="/media/education.svg" style={{width:"80%"}}></img>
             </div>

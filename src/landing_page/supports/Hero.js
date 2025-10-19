@@ -1,17 +1,17 @@
 export default function Hero(){
     return (
         <div style={{background:"rgb(79, 157, 240)"}}>
-        <div className="container" style={{color:"white"}} >
-            <div className="row p-5">
-                <div className="col-1"></div>
-                 <div className="col-5"><h3>Support Portal</h3></div>
-                 <div className="col-4"></div>
-                 <div className="col-2"><h4>Track Ticket</h4></div>
+        <div className="container-fluid p-5" style={{color:"white"}} >
+            <div className="row">
+                <div className="col-2"></div>
+                 <div className="col-4"><h3>Support Portal</h3></div>
+                 <div className="col-3"></div>
+                 <div className="col-3"><h4>Track Ticket</h4></div>
             </div>
 
             <div className="row">
                 <div className="col-1"></div>
-                <div className="col-5">
+                <div className="col-5 text-center">
                     <h5 className="mb-2">Search for an answer or browser help topics to create a ticket</h5>
                     <div style={{background:"white" , borderRadius:"10px"}}>
                             <h6 className="mt-4 text-muted p-4" Style={{ color:"black" , marginleft:"10px"}}>Eg: how to I activate F&O, why is my order getting rejected</h6>

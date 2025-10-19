@@ -1,8 +1,8 @@
 export default function Hero(){
     return (
-       <div className="container">
-            <div className="row text-center mt-5  mb-5">
-                <h2 className="mt-5">Charges</h2>
+       <div className="container-fluid p-5">
+            <div className="row text-center mt-5   p-5">
+                <h2 className="">Charges</h2>
                 <h4 className="text-muted mt-2 mb-2">List of all charges and taxes</h4>
 
                  <div className="col-4 text-center p-5">

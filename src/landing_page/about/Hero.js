@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <div className="container">
+    <div className="container-fluid p-5">
       <div className="row p-5">
         <h1 className="text-center fs-3 mt-5 mb-5">
           We pioneered the discount broking model in India.<br></br> Now, we are breaking

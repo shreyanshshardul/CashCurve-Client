@@ -3,6 +3,7 @@ import axios, { all } from "axios";
 import { VerticalGraph } from "./VerticalGraph";
 //import {holdings} from "./data/data";
 import { BASE_URL } from "../../config";
+import './index2.css'
 
 //import { holdings } from "./data/data";
 
